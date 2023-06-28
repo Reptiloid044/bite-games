@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bite-Games</title>
+  <link
+    rel="icon"
+    type="image/x-icon"
+    href="./images/logo.svg"
+  >
+  <link rel="stylesheet" href="./styles/main.scss">
+</head>
+<body class="page__body container">
+  <header class="header page__header" id="headerBlock">
+    <div class="header__language-selector">
+      <a href="#" class="header__language-option" id="english-option">EN</a>
+      <a href="#" class="header__language-option hidden" id="arabic-option">AR</a>
+    </div>
+    <div class="header__logo">
+      <img src="./images/logo.svg" alt="Logo">
+    </div>
+  </header>
+  <section class="info page__section" id="sectionBlock">
+    <div class="info__title">
+      For the best content
+      <br>
+      Click below
+    </div>
+    <div class="info__icons">
+      <img src="./images/arrow.svg" alt="arrow">
+      <img src="./images/arrow.svg" alt="arrow">
+      <img src="./images/arrow.svg" alt="arrow">
+    </div>
+    <div class="info__description">
+      Get access to an extensive collection 
+      <br>
+      of premium games
+    </div>
+  </section>
+  <section class="registration page__registration" id="registrationBlock">
+    <div class="registration" id="registration">
+      <div class="registration__title">
+        Enter your phone number:
+      </div>
+      <form class="registration__form">
+        <div class="registration__inputContainer">
+          <div class="registration__country-code-select">
+            <select id="country-code" name="country-code">
+              <option value="1" selected>+ 1</option>
+              <option value="44">+ 44</option>
+              <option value="49">+ 49</option>
+            </select>
+          </div>
+          <div class="registration__phone-number-input">
+            <input 
+              maxlength="10"
+              pattern="\d{10,10}"
+              type="text"
+              id="phone-number" 
+              name="phone-number" 
+              placeholder="XXX XXX XXX"
+            >
+            <div id="number-validation-message" class="registration__number-validation-message"></div>
+          </div>
+        </div>
+
+        <button 
+          id="button-validation-green" 
+          class="registration__submit"
+          type="submit"
+          disabled
+        >
+          GET OTP
+        </button>
+      </form>
+    </div>
+    <div class="pin" id="pin" style="display: none">
+      <div class="pin__title">Enter PIN</div>
+      <form class="pin__form">
+        <div class="pin__form-container">
+          <img 
+            src="./images/lock.svg" 
+            alt="arrow"
+            class="pin__lock"
+          >
+          <input 
+            type="text" 
+            maxlength="1" 
+            class="pin__input" 
+            id="pin-number"
+          >
+          <input 
+            type="text" 
+            maxlength="1" 
+            class="pin__input" 
+            id="pin-number"
+          >
+          <input 
+            type="text" 
+            maxlength="1" 
+            class="pin__input" 
+            id="pin-number"
+          >
+          <input 
+            type="text" 
+            maxlength="1" 
+            class="pin__input" 
+            id="pin-number"
+          >
+        </div>
+        <button 
+          id="button-validation-pin"
+          class="registration__submit"
+          type="submit"
+          disabled
+        >
+          SUBSCRIBE
+        </button>
+      </form>
+    </div>
+    <div class="registration__submit-text">11.95 PKR/Day</div>
+    <div class="pin__reset" id="reset" style="display: none;">
+      <ul class="pin__list">
+        <li class="pin__item">
+          <a class="pin__link" href="#">Re-send SMS with PIN code</a>
+        </li>
+        <li class="pin__item">
+          <a class="pin__link" href="#">Change number</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="readMore page__readMore" id="readMoreBlock">
+    <a href="#" class="readMore__link" id="readMore-open">
+      <span id="icon1" class="readMore__icon">&#9655;</span>
+      Read More
+      <span id="icon2" class="readMore__icon">&#9655;</span>
+    </a>
+  
+    <div class="readMore__description" id="description">
+      <p>The cost will be added to your mobile phone bill.</p>
+      <br>
+      <p>You will be able to play the games already downloaded even if you unsubscribe.</p>
+      <br>
+      <p>Enjoy over 150 top premium games: ads-free and without in-app purchases!</p>
+      <br>
+      <p>You can cancel your subscription at any time from <a href="#" class="readMore__myAccount">My account</a> section.</p>
+    </div>
+  </section>
+  <main class="main page__main container" id="mainBlock" style="display: none;">
+    <header class="header main__header container">
+      <div class="main__menu">
+        <a href="#" class="header__menu-link" id="menuLink">
+          <img src="./images/menu.svg" alt="Menu">
+        </a>
+      </div>
+      <div class="main__logo">
+        <a href="#" class="header__logo-link" id="logoMain">
+          <img src="./images/logoMain.svg" alt="Logo">
+        </a>
+      </div>
+      <div class="main__account">
+        <a href="#" class="header__account-link" id="account">
+          <img src="./images/account.svg" alt="Account">
+        </a>
+      </div>
+    </header>
+    <div class="menu-container">
+      <div id="menuContent" class="menu">
+        <a href="#" class="close-link" id="closeMenu">
+          <img src="./images/close.svg" alt="Close">
+        </a>
+        <ul class="menu__list">
+          <li>
+            <a target="_blank" href="https://github.com/Reptiloid044?tab=repositories">
+              <img src="./images/GitHub_Invertocat_Logo.svg" alt="github" class="menu__image">
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://www.linkedin.com/in/artemii-pavlenko-16b656187/">
+              <img src="./images/linkedin.png" alt="linkedin" class="menu__image">
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://drive.google.com/file/d/1P-g-QrMQOW3l6eTwR3S-e5JhftYiCY3q/view?usp=sharing" class="menu__cv">
+              CV
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <section class="greenBlock page__greenBlock" id="greenBlock">
+      <div class="greenBlock__box">
+        <p class="greenBlock__box-text">Your subscription to Bite Games premium<br>has been successfully processed</p>
+      </div>
+    </section>
+    <section class="carousel page__carousel">
+      <div class="carousel__container">
+        <div class="carousel__slides">
+          <img src="./images/maincraft.webp" class="carousel__slide-image" alt="Photo 1">
+          <img src="./images/video-games-style.webp" class="carousel__slide-image" alt="Photo 2">
+          <img src="./images/highrise.png" class="carousel__slide-image" alt="Photo 3">
+        </div>
+        
+        <div class="arrow carousel__arrow-left" id="carousel__arrow-left">
+          <img class="arrow carousel__arrow-left" src="./images/arrow-short-left-svgrepo-com.svg" alt="left">
+        </div>
+        <div class="arrow carousel__arrow-right" id="carousel__arrow-right">
+          <img class="arrow carousel__arrow-right" src="./images/arrow-short-right-svgrepo-com.svg" alt="left">
+        </div>
+        
+        <div class="carousel__indicator">
+          <span class="carousel__dot active"></span>
+          <span class="carousel__dot"></span>
+          <span class="carousel__dot"></span>
+        </div>
+      </div>
+    </section>
+    <button 
+      id="button-subscribe" 
+      class="carousel__submit"
+      type="submit"
+    >
+      SUBSCRIBE
+    </button>
+    <div class="line"></div>
+    <section class="gamesSection page__gamesSection">
+      <div class="gamesSection__header">
+        <h2 class="gamesSection__title">New Games</h2>
+        <div class="gamesSection__count">
+          <span class="count">6</span>
+        </div>
+      </div>
+      <div class="gamesSection__images">
+        <img src="./images/1Game.svg" alt="Game 1">
+        <img src="./images/2Game.svg" alt="Game 2">
+        <img src="./images/3Game.svg" alt="Game 3">
+        <img src="./images/4Game.svg" alt="Game 4">
+        <img src="./images/5Game.svg" alt="Game 5">
+        <img src="./images/6Game.svg" alt="Game 6">
+      </div>
+      <div class="gamesSection__more-games">
+        <h3 class="gamesSection__title">More Games</h3>
+        <div class="gamesSection__add-icon">+</div>
+      </div>
+    </section>
+    <section class="popularSection page__popularSection">
+      <div class="popularSection__header">
+        <h2 class="popularSection__title">Popular Games</h2>
+        <div class="popularSection__count">
+          <span class="count">20</span>
+        </div>
+      </div>
+      <div class="popularSection__images">
+        <img src="./images/7Game.svg" alt="Game 1">
+        <img src="./images/8Game.svg" alt="Game 2">
+        <img src="./images/9Game.svg" alt="Game 3">
+        <img src="./images/10Game.svg" alt="Game 4">
+        <img src="./images/11Game.svg" alt="Game 5">
+      </div>
+      <div class="popularSection__buttons">
+        <button class="popularSection__contact-button">Contact Us</button>
+        <button class="popularSection__faq-button">FAQ</button>
+      </div>
+    </section>
+  </main>
+  <footer class="footer page__footer">
+    <div class="footer__link">
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a href="#" class="footer__link">T&C</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">CONTACT US</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">FAQ</a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__logo">
+      <img src="./images/footer.svg" alt="Logo">
+    </div>
+    <div class="footer__rights">
+      <p>@2023 All Rights Reserved</p>
+    </div>
+  </footer>
+</body>
+</html>

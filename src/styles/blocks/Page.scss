@@ -1,0 +1,27 @@
+.page {
+  &__body {
+    overflow: auto;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    background-color: #1E2128;
+    padding: 22px;
+    min-height: 100vh;
+  }
+
+  .hidden {
+    display: none;
+  }
+  
+  .no-scroll {
+    overflow: hidden;
+  }
+  
+  .prevent-click {
+    pointer-events: none;
+  }
+}
+
+.container {
+  max-width: 768px;
+  margin: 0 auto;
+};

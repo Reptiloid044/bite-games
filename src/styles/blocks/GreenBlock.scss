@@ -1,0 +1,22 @@
+.greenBlock {
+  position: relative;
+  margin: 0 auto;
+  z-index: 1;
+
+  &__box {
+    display: flex;
+    height: 62px;
+    border-radius: 12px;
+    background: #AED300;
+    padding: 12px;
+  }
+
+  &__box-text {
+    @extend %Montserrat400;
+    color: black;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+  }
+}

@@ -1,0 +1,102 @@
+.carousel {
+  position: relative;
+  bottom: 20px;
+  overflow: hidden;
+  max-width: 768px;
+  max-height: 375px; 
+  margin-left: -22px;
+  margin-right: -22px;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 768px;
+    max-height: 375px;
+  }
+
+  &__slides {
+    max-width: 768px;
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  &__slide-image {
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+
+  &__slide-image.active {
+    display: block;
+  }
+
+  &__arrow-left {
+    left: 10px;
+  }
+
+  &__arrow-right {
+    right: 10px;
+  }
+
+  &__indicator {
+    position: absolute;
+    height: 20px;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(190, 190, 190, 0.5);
+    margin: 0 5px;
+    cursor: pointer;
+  }
+
+  &__dot.active {
+    background-color: #fff;
+  }
+
+  &__submit {
+    background-color: #BF2DE2;
+    margin: 0 auto;
+    width: 230px;
+    height: 65px;
+    border-radius: 12px;
+    @extend %Montserrat700;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(255, 85, 249, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  &__submit:hover {
+    transform: scale(0.95);
+  }
+  
+  &__submit:active {
+    transform: scale(1);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+}
+
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+}

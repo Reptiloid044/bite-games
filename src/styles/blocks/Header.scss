@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__language-selector {
+    display: flex;
+  }
+
+  &__language-option {
+    @extend %Inter400;
+  }
+
+  &__logo {
+    width: 54px;
+    height: 44px;
+  }
+};
+
+.hidden {
+  display: none;
+}

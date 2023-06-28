@@ -1,0 +1,57 @@
+.gamesSection {
+  margin-top: 40px;
+  text-align: center;
+
+  &__header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  &__title {
+    @extend %Montserrat700;
+    font-size: 16px;
+    color: white;
+  }
+
+  &__count {
+    margin-left: 5px;
+    @extend %Montserrat400;
+    width: 30px;
+    height: 30px;
+    background-color: #AED300;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+  }
+
+  &__images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 10px;
+  }
+
+  &__more-games {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  &__add-icon {
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+    background-color: #AED300;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,18 @@
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  
+  &__title {
+    @extend %Inter600;
+    text-align: center;
+  };
+
+  &__description{
+    @extend %Inter400;
+    color: #A4A4A4; 
+    text-align: center;
+    size: 12px;
+  };
+}

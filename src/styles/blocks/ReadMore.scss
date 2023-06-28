@@ -1,0 +1,49 @@
+.readMore {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+
+  &__link {
+    display: flex;
+    @extend %Roboto500;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+    size: 16px;
+    color: #8F8F8F;
+    text-decoration: none;
+  }
+
+  &__description {
+    @extend %Roboto400;
+    font-size: 12px;
+    line-height: 14px;
+    color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    width: 280px;
+  }
+  
+  &__description.open {
+    width: 280px;
+    max-height: 210px;
+  }
+
+  &__myAccount {
+    color: #AED300;
+  }
+
+  &__icon {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  
+  &__link.rotate &__icon {
+    transform: rotate(90deg);
+  }
+};

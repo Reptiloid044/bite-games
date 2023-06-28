@@ -1,0 +1,171 @@
+.registration {
+  margin-top: 50px;
+
+  &__title {
+    @extend %Roboto500;
+    color: white;
+    margin-bottom: 20px;
+  };
+
+  &__form {
+    max-width: 100%;
+  };
+  
+  &__inputContainer {
+    display: flex;
+  };
+
+  &__country-code-select select {
+    width: 100%;
+    height: 45px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-right: none;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+  };
+
+  &__country-code-select::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background-image: url("https://www.svgrepo.com/show/511043/line-xl.svg");
+    background-repeat: no-repeat;
+    background-size: 16px;
+    width: 16px;
+    height: 16px;
+  }
+
+  &__country-code-select {
+    position: relative;
+    width: 58px;
+  }
+  
+  &__phone-number-input {
+    flex: 1;
+    position: relative;
+  }
+
+  &__phone-number-input input[type="text"] {
+    width: 100%;
+    height: 45px;
+    border: 1px solid #ccc;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    text-align: center;
+  };
+
+  &__submit[type="submit"] {
+    background-color: grey;
+    @extend %Roboto700;
+    color: white;
+    width: 100%;
+    height: 50px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+  };
+  
+  &__submit[type="submit"].green {
+    background-color: green;
+  }
+
+  &__submit-text {
+    @extend %Roboto500;
+    font-size: 12px;
+    text-align: center;
+    color: #9A9A9A;
+    margin-top: 10px;
+  }
+
+  &__number-validation-message {
+    display: none;
+  }
+  
+  &__number-validation-message.valid {
+    border-radius: 0px 3px 3px 0px;
+    background-color: green;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 45px;
+    background-image: url('./../images/done.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0;
+    animation: fadeIn 0.3s ease forwards;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateX(70%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+}
+
+.pin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    @extend %Roboto700;
+    font-size: 17px;
+    line-height: 17px;
+    text-align: left;
+    margin-bottom: 20px;
+    color: white;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__lock {
+    margin-right: 20px;
+  }
+
+  &__input {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 4px;
+  }
+
+  &__reset {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  &__link {
+    @extend %Roboto400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+  }
+}
