@@ -52,10 +52,10 @@
               <option value="49">+ 49</option>
             </select>
           </div>
-          <div class="registration__phone-number-input">
+          <div class="registration__phone-number-container">
             <input 
+              class="registration__phone-number-input"
               maxlength="10"
-              pattern="\d{10,10}"
               type="text"
               id="phone-number" 
               name="phone-number" 
@@ -258,6 +258,7 @@
         <img src="./images/9Game.svg" alt="Game 3">
         <img src="./images/10Game.svg" alt="Game 4">
         <img src="./images/11Game.svg" alt="Game 5">
+        <img src="./images/7Game.svg" alt="Game 6">
       </div>
       <div class="popularSection__buttons">
         <button class="popularSection__contact-button">Contact Us</button>
@@ -266,7 +267,7 @@
     </section>
   </main>
   <footer class="footer page__footer">
-    <div class="footer__link">
+    <div class="footer__link" id="footerLink">
       <ul class="footer__list">
         <li class="footer__item">
           <a href="#" class="footer__link">T&C</a>

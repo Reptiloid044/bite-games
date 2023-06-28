@@ -83,6 +83,7 @@ const sectionBlock = document.getElementById('sectionBlock');
 const registration = document.getElementById('registrationBlock');
 const readMoreBlock = document.getElementById('readMoreBlock');
 const mainBlock = document.getElementById('mainBlock');
+const footerLink = document.getElementById('footerLink');
 
 pinForm.addEventListener('submit', (event) => {
   event.preventDefault();
@@ -113,6 +114,7 @@ function handleClick() {
   sectionBlock.style.display = 'none';
   registration.style.display = 'none';
   readMoreBlock.style.display = 'none';
+  footerLink.style.display = 'none';
 }
 
 const slides = document.querySelector('.carousel__slides');
@@ -179,3 +181,5 @@ document.addEventListener('click', (event) => {
     bodyElement.style.overflow = 'auto';
   }
 });
+
+

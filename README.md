@@ -1,4 +1,4 @@
-Bite-Games Landing:
+# Bite-Games Landing:
 
 This project was implemented in two sizes: mobile version (375px), tablet version (768px).
 In Registration you can fill the number and pin with validation. Carousel with games, and menu for open and explore my experience.
@@ -9,7 +9,7 @@ In Registration you can fill the number and pin with validation. Carousel with g
 
 ________________________________________________________
 
-HOW TO INSTALL THE PROJECT?
+# HOW TO INSTALL THE PROJECT?
 
 - 1 Step:
 Fork my repository;
@@ -27,19 +27,21 @@ Ready to hack!
 
 ________________________________________________________
 
-TECHNOLOGIES:
+# TECHNOLOGIES:
 
 - HTML
 - BEM
 - SCSS
 - JS
 
-***Important!!!
+# Important!!!
 
 If you would like to switch to language "AR", you should make some manipulation with:
 
-- 1 Step:
+# 1 Step:
 Go to webpack.config.js and change 
+
+```
   plugins: [
     new HtmlWebpackPlugin({
       title: 'Webpack App',
@@ -48,14 +50,16 @@ Go to webpack.config.js and change
     }),
     new BundleAnalyzerPlugin(),
   ],
-;
+```
 
-- 2 Step:
+# 2 Step:
 Go to ./src/index.js and change 
+
+```
   import './index-ar.html';
   import './styles/main-ar.scss';
   import './scripts/main';
-;
+```
 
-- 3 Step:
+# 3 Step:
 npm run dev;
