@@ -1,3 +1,3 @@
 import './index.html';
-import './scripts/main';
+import './scripts/main.js';
 import './styles/main.scss';
