@@ -6,6 +6,7 @@
 
   &__header {
     display: flex;
+    align-items: center;
     margin-right: auto;
   }
 
@@ -14,7 +15,6 @@
     font-size: 16px;
     color: white;
   }
-
 
   &__game-count {
     width: 30px;
@@ -40,14 +40,6 @@
     color: black;
   }
 
-  &__images {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 20px;
-    gap: 20px;
-  }
-
   &__buttons button {
     height: 42px;
     width: 100%;
@@ -60,7 +52,6 @@
     cursor: pointer;
     @extend %Montserrat700;
     font-size: 14px;
-    color: black;
   }
 
   &__buttons {
@@ -75,6 +66,7 @@
     grid-template-columns: repeat(1, 6fr);
     grid-gap: 20px;
     margin-top: 40px;
+    margin-bottom: 20px;
 
     @include onTablet {
       grid-template-columns: repeat(2, 6fr);

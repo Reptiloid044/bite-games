@@ -1,16 +1,3 @@
-const englishOption = document.getElementById('english-option');
-const arabicOption = document.getElementById('arabic-option');
-
-englishOption.addEventListener('click', () => {
-  englishOption.classList.add('hidden');
-  arabicOption.classList.remove('hidden');
-});
-
-arabicOption.addEventListener('click', () => {
-  arabicOption.classList.add('hidden');
-  englishOption.classList.remove('hidden');
-});
-
 const openReadMore = document.getElementById('readMore-open');
 const description = document.getElementById('description');
 
@@ -93,7 +80,6 @@ pinInputs.forEach((input) => {
   input.addEventListener('input', () => {
     const pinValues = Array.from(pinInputs).map((input) => input.value);
     const isComplete = pinValues.every((value) => value !== '');
-    console.log(pinValues, isComplete);
 
     if (isComplete) {
       pinButton.removeAttribute('disabled');

@@ -1,9 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports = {
-  mode: 'development',
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -11,7 +9,6 @@ module.exports = {
     clean: true,
     assetModuleFilename: '[name][ext]',
   },
-  devtool: 'source-map',
   devServer: {
     static: {
       directory: path.resolve(__dirname, 'dist'),
@@ -25,12 +22,12 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.html$/,
-        use: 'html-loader',
+        test: /\.scss$/,
+        use: ['style-loader', 'css-loader', 'sass-loader', ],
       },
       {
-        test: /\.scss$/,
-        use: ['style-loader', 'css-loader', 'sass-loader'],
+        test: /\.html$/,
+        use: 'html-loader',
       },
       {
         test: /\.js$/,
@@ -54,6 +51,10 @@ module.exports = {
       filename: 'index.html',
       template: 'src/index.html',
     }),
-    new BundleAnalyzerPlugin(),
+    new HtmlWebpackPlugin({
+      title: 'Webpack App',
+      filename: 'index-ar.html',
+      template: 'src/index-ar.html',
+    }),
   ],
 };

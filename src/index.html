@@ -14,8 +14,7 @@
 <body class="page__body container">
   <header class="header page__header" id="headerBlock">
     <div class="header__language-selector">
-      <a href="#" class="header__language-option" id="english-option">EN</a>
-      <a href="#" class="header__language-option hidden" id="arabic-option">AR</a>
+      <a href="index-ar.html" class="header__language-option" id="english-option">AR</a>
     </div>
     <div class="header__logo">
       <img src="./images/logo.svg" alt="Logo">
@@ -55,10 +54,10 @@
           <div class="registration__phone-number-container">
             <input 
               class="registration__phone-number-input"
-              maxlength="10"
-              type="text"
+              type="number"
               id="phone-number" 
               name="phone-number" 
+              oninput="this.value = this.value.replace(/[^0-9]/g, '').substring(0, 10);"
               placeholder="XXX XXX XXX"
             >
             <div id="number-validation-message" class="registration__number-validation-message"></div>
