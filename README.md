@@ -1,7 +1,7 @@
 # Bite-Games Landing:
 
 This project was implemented in two sizes: mobile version (375px), tablet version (768px).
-In Registration you can fill the number and pin with validation. Carousel with games, language to change and menu for open and explore my experience.npm run build
+In Registration you can fill the number and pin with validation. Carousel with games, language to change and menu for open and explore my experience.
 
 - [FIGMA](https://www.figma.com/file/ov8fhyDyFBcOz7PRnPC1eh/TEST?type=design&node-id=1-316&mode=design&t=DosWjaS9CyKtwCxq-0)
 
